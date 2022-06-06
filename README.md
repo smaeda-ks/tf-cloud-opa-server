@@ -27,6 +27,10 @@ $ go install
 
 $ export PORT=8080
 $ export TFC_RUN_TASK_HMAC_KEY=your_hmac_key
+# This is optional. If you want to post debug output in the associated Run comment, set this env variable.
+# see: https://github.com/smaeda-ks/tf-cloud-opa-server/blob/93fe849647dce99cc26b7e8d1fbfd538ec7ebb89/main.go#L127-L143
+$ export TFC_API_KEY=your_tfc_api_key
+
 $ go run main.go
 ```
 
